@@ -1,0 +1,36 @@
+				cclcfox 
+			      ==========
+	    (Bruno Deferrari <tizoc@users.sourceforge.net> 2005)
+
+cclcfox is the client part of an internet cafe managenent program.
+It depends on:
+	       libcclc (http://ccl.sourceforge.net)
+	       libfox (http://www.fox-toolkit.org)
+
+libcclc itself, depends on openssl (http://www.openssl.org).
+
+To build it:
+
+  ./configure && make
+
+and then as root:
+
+  make install
+
+Running:
+./cclcfox -host <server> -name <myname> [options]
+
+<myname> is the name this client is going to be identified with.
+<server> is the server's hostname or IP.
+
+Options are:
+     -port <port>: Connect to the specified port (default: 2999)
+     -nossl: do not use SSL to connect (default: use SSL)
+     -certpass <password>: password used for the cerfificate
+	                   (default: none). Ignored if not using SSL.
+					
+
+This is work in progress, some things may be missing, and some may not work.
+
+For help, bug tracking and CVS, please visit:
+http://sourceforge.net/projects/ccl

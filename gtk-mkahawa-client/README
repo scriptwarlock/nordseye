@@ -1,0 +1,43 @@
+mkahawa-client
+==============
+
+(Bernard Owuor <owuor@unwiretechnologies.net> 2010)		
+
+gtk-mkahawa-client is GTK version of mkahawa-client
+
+gtk-mkahawa-client is the client module of an internet cafe managenent program.
+
+To build it:
+
+  ./configure && make
+
+and then as root:
+
+  make install
+
+Running:
+
+Usage: ./gtk_mkahawa_client -host <server> -name <myname> [options]
+Usage: ./gtk_mkahawa_client -conf <config file>
+
+<server>: the server's hostname or IP
+<myname>: the name this client is going to be identified with
+<config file>: configuration file. default is /etc/default/mkahawa-client
+
+./gtk-mkahawa-client -host <server> -name <myname> [options]
+
+<myname> is the name this client is going to be identified with.
+<server> is the server's hostname or IP.
+
+Options are:
+     -port <port>: Connect to the specified port (default: 2999)
+     -dir <homedir>: Home directory - where configs are stored
+     -nossl: do not use SSL to connect (default: use SSL)
+     -certpass <password>: password used for the cerfificate
+	                   (default: none). Ignored if not using SSL.
+					
+
+This is work in progress, some things may be missing, and some may not work.
+
+For help, bug tracking and CVS, please visit:
+https://mkahawa.svn.sourceforge.net/svnroot/mkahawa

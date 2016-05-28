@@ -1,0 +1,121 @@
+HACKING
+
+This document gives an overview of the code for gtk-mkahawa client. 
+
+Language:  C, glib
+Graphics Library: GTK2
+Other Libraries: openssl
+
+GTK Mkahawa Client code consists of 4 main sub-modules. 
+
+1. Network
+2. Graphical Interface (Info Panel)
+3. Blocker
+4. Command Control
+5. Application
+
+Details are given below
+
+
+1. Network 
+----------
+A: General Functionality
+- Handles connectivity between client and the server
+- Receives commands from server and passes to commands sub-module
+- Provides routines for sending commands (replies) to the server
+
+B: Files
+mca_network_private.h
+mca_network_utils.c
+mca_network.c
+
+
+2. Graphical Interface (InfoPanel)
+----------------------------------
+A: General Functionality
+- Displays the duration and cost of the session
+- Provides for session control (stop, chat etc)
+
+B: Files
+ui/info-panel.ui
+ui/info-panel-exit-wnd.ui
+ui/info-panel-exit-dlg.ui
+ui/info-panel-help.ui
+ui/info-panel-menu.ui
+
+ui_utils.c
+mca_info_panel.c
+
+
+3. Blocker 
+----------
+A: General Functionality
+- Blocks the screen session 
+- Provides interface for logging in (starting the session)
+
+B: Files
+ui/blocker.ui
+blocker_ui.c
+mca_blocker.c 
+mca_svr_req.c
+
+
+4. Command Control
+------------------
+A: General Functionality
+- Routines for executing network commands
+- Routines for executing GUI commands
+- Routines for executing Blocker commands
+
+B:Files
+mca_command.c
+- Calls routines inf mca_cmd_*
+mca_cmd_utils.c
+- Routines that have no specific character (block / unblock)
+mca_cmd_state.c
+- Routines that affect the states of client
+- The states are: allow login by ticket, member, user
+     	     	  enable password edit button, assist button	 
+mca_cmd_session.c
+- Server commands that control the session (start, stop, resume, timeout, pause)
+mca_cmd_message.c
+- Routines that handle server commands with an attached message
+mca_cmd_system.c
+- Routines that control the computer system (reboot, shutdown, blank screen etc)
+mca_cmd_update.c
+- Routines that handle client update
+mca_cmd_panel.c 
+- Routines that handle commands from the GUI (Information panel)
+
+
+5. Application 
+--------------
+A: General Functionality
+- Routines for controlling the session state engine
+- 1-second timer that advances the session state engine
+- Routines for parsing the config file & command line arguments
+- Routines for polling the server
+
+B: Files 
+mca_app.c 
+main.c 
+
+
+Other Files / Utilities
+-----------------------
+(I). Utils
+A: General Functionality
+- Routine for delaying for stipulated number of seconds
+
+B: Files
+
+utils.c
+
+
+(II). Status 
+A: General Functionality
+- Return status - NOT 
+
+B: Files
+mca_status.c
+

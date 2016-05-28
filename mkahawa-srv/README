@@ -1,0 +1,41 @@
+mkahawa 
+=======
+
+(Bernard Owuor <owuor@users.sourceforge.net> 2009)
+
+mkahawa is an internet cafe management program that has been 
+branched from cclfox by Bruno Deferrari <tizoc@users.sourceforge.net> 
+
+
+mkahawa depends on:
+- libccls (http://ccl.sourceforge.net)
+(A copy of libccls can be obtained at mkahawa.sourceforce.net)
+- libfox (http://www.fox-toolkit.org)
+
+
+To build it:
+
+  ./configure && make
+
+and then as root:
+
+  make install
+
+To create a certificate: (Read the file CERTIFICATES.howto)
+
+Running:
+mkahawa [options]
+
+Where options are:
+      -port <port>: Listen on the specified port (default: 2999)
+      -nossl: do not use SSL to connect (default: use SSL)
+      -certpass <password>: password used for the cerfificate (default: none).
+			    Ignored if not using SSL (-nossl option enabled).
+					 
+
+If you are using SSL, you must install the certificates (CERTIFICATES.howto).
+
+This is work in progress, some things may be missing, and some may not work.
+
+For help, bug tracking and CVS, please visit:
+https://mkahawa.svn.sourceforge.net/svnroot/mkahawa

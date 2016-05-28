@@ -1,0 +1,17 @@
+mkahawa-srv compile
+	./configure LIBS="-lpthread -lm -ldl"
+	make
+	sudo make install
+
+
+
+mkahawa-client compile
+	dependencies:
+		libgtk-2.0-dev
+		libnotify-dev
+	
+config.status: error: po/Makefile.in.in was not created by intltoolize
+	intltoolize --force
+	aclocal
+
+	./configure LIBS="-lpthread -lm -lssl -lcrypto -lX11 -ldl"

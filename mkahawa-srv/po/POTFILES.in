@@ -1,0 +1,13 @@
+src/CashingFrame.cpp
+src/CCLWin.cpp
+src/EmployeesFrame.cpp
+src/LogFrame.cpp
+src/MembersFrame.cpp
+src/MSGWin.cpp
+src/NotpaidFrame.cpp
+src/ProductsFrame.cpp
+src/ReportFrame.cpp
+src/TarifFrame.cpp
+src/TicketsBox.cpp
+src/QTicketsBox.cpp
+src/SettingsBox.cpp

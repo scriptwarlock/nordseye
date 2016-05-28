@@ -1,0 +1,39 @@
+mkahawa-client
+==============
+
+(Bernard Owuor <owuor8@users.sourceforge.net> 2009)		
+
+mkahawa-client is a branch from cclcfox by:
+(Bruno Deferrari <tizoc@users.sourceforge.net> 2005)
+
+mkahawa-client is the client part of an internet cafe managenent program.
+It depends on:
+   - libcclc (http://ccl.sourceforge.net)
+(An updated copy of libcclc is provided at http://mkahawa.sourceforge.net)
+   - libfox (http://www.fox-toolkit.org)
+
+To build it:
+
+  ./configure && make
+
+and then as root:
+
+  make install
+
+Running:
+./mkahawa-client -host <server> -name <myname> [options]
+
+<myname> is the name this client is going to be identified with.
+<server> is the server's hostname or IP.
+
+Options are:
+     -port <port>: Connect to the specified port (default: 2999)
+     -nossl: do not use SSL to connect (default: use SSL)
+     -certpass <password>: password used for the cerfificate
+	                   (default: none). Ignored if not using SSL.
+					
+
+This is work in progress, some things may be missing, and some may not work.
+
+For help, bug tracking and CVS, please visit:
+https://mkahawa.svn.sourceforge.net/svnroot/mkahawa

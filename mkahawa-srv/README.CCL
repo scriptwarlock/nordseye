@@ -1,0 +1,39 @@
+				cclfox 
+			      ==========
+	    (Bruno Deferrari <tizoc@users.sourceforge.net> 2005)
+
+cclfox is an internet cafe managenent program.
+It depends on:
+	       libccls (http://ccl.sourceforge.net)
+	       libfox (http://www.fox-toolkit.org)
+
+libccl itself depends on sqlite (http://www.sqlite.org) (must be >= 3.0)
+, glib (http://www.gtk.org) (must be 2.x)
+and openssl (http://www.openssl.org).
+
+To build it:
+
+  ./configure && make
+
+and then as root:
+
+  make install
+
+To create a certificate: (Read the file CERTIFICATES.howto)
+
+Running:
+cclfox [options]
+
+Where options are:
+      -port <port>: Listen on the specified port (default: 2999)
+      -nossl: do not use SSL to connect (default: use SSL)
+      -certpass <password>: password used for the cerfificate (default: none).
+			    Ignored if not using SSL (-nossl option enabled).
+					 
+
+If you are using SSL, you must install the certificates (CERTIFICATES.howto).
+
+This is work in progress, some things may be missing, and some may not work.
+
+For help, bug tracking and CVS, please visit:
+http://sourceforge.net/projects/ccl

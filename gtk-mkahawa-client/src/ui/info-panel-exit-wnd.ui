@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="wndExit">
+    <property name="border_width">5</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">normal</property>
+    <property name="opacity">0.84999999999999998</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+<!--    <signal name="close" handler="gtk_widget_hide"/>  -->
+<!--    <child internal-child="vbox">  -->
+     <child>
+      <object class="GtkVBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child>
+          <object class="GtkVBox" id="vbox1">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="lblConfirmExit">
+                <property name="visible">True</property>
+                <property name="yalign">0.43999999761581421</property>
+                <property name="xpad">50</property>
+                <property name="ypad">50</property>
+                <property name="label" translatable="yes">End this Session?</property>
+                <property name="justify">center</property>
+                <property name="wrap">True</property>
+                <attributes>
+                  <attribute name="scale" value="2.000000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkHBox" id="hbox1">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkLabel" id="lblExitCost">
+                    <property name="visible">True</property>
+                    <property name="yalign">0.43999999761581421</property>
+                    <property name="label" translatable="yes">Session Cost: </property>
+                  </object>
+                  <packing>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="lblExitTime">
+                    <property name="visible">True</property>
+                    <property name="xpad">1</property>
+                    <property name="label" translatable="yes">Session Time: </property>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+     <!--   <child internal-child="action_area"> -->
+        <child>
+          <object class="GtkHButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="layout_style">spread</property>
+            <child>
+              <object class="GtkButton" id="btnExitYes">
+                <property name="label" translatable="yes">Yes</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnExitNo">
+                <property name="label" translatable="yes">No</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+<!--    <action-widgets>
+      <action-widget response="0">btnExitYes</action-widget>
+      <action-widget response="0">btnExitNo</action-widget>
+    </action-widgets>
+-->
+  </object>
+  <object class="GtkAction" id="action1"/>
+</interface>

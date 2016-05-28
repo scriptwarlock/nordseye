@@ -1,0 +1,4 @@
+USERNAME=mysql
+SERVER_ADDR=localhost
+CLIENT_NAME=MkahawaTest
+SSL=no

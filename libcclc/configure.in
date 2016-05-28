@@ -1,0 +1,46 @@
+m4_define([libcclc_major_version], [0])
+m4_define([libcclc_minor_version], [8])
+m4_define([libcclc_micro_version], [0])
+m4_define([libcclc_interface_age], [0])
+
+m4_define([libcclc_lt_current],
+          [m4_eval(libcclc_minor_version + libcclc_micro_version - libcclc_interface_age)])
+m4_define([libcclc_lt_revision], [libcclc_interface_age])
+m4_define([libcclc_lt_age], [libcclc_minor_version])
+
+AC_INIT(configure.in)
+
+LIBCCLC_MAJOR_VERSION=libcclc_major_version
+LIBCCLC_MINOR_VERSION=libcclc_minor_version
+LIBCCLC_PATCH_LEVEL=libcclc_micro_version
+  
+VERSION=$LIBCCLC_MAJOR_VERSION.$LIBCCLC_MINOR_VERSION.$LIBCCLC_PATCH_LEVEL
+
+AM_INIT_AUTOMAKE(libcclc, $VERSION)
+
+AC_PROG_CC
+AM_PROG_LIBTOOL
+AC_PROG_MAKE_SET
+
+AC_LANG_C
+
+AC_CHECK_LIB(ssl, SSL_new,,AC_MSG_ERROR([please install openssl]))
+AC_CHECK_HEADER(openssl/ssl.h,,AC_MSG_ERROR([please install openssl headers]))
+
+AC_HEADER_TIME
+
+LT_CURRENT=libcclc_lt_current
+LT_REVISION=libcclc_lt_revision
+LT_AGE=libcclc_lt_age
+
+AC_SUBST(LT_CURRENT)
+AC_SUBST(LT_REVISION)
+AC_SUBST(LT_AGE)
+
+AC_SUBST(VERSION)
+
+AC_OUTPUT([
+config.h
+Makefile
+src/Makefile
+])

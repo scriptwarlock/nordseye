@@ -1,0 +1,20 @@
+libcclc
+=======
+
+libccl is a library that (tries to) makes the creation
+of applications to manage Internet Cafes easier.
+libcclc is the library used for the clients.
+
+It should work anywhere where openssl is available.
+
+Dependencies:
+* openssl (www.openssl.org)
+
+I tested it with, and openssl 0.9.6j.
+
+Installation:
+Do the same as always,
+  ./configure
+  make
+and as root,
+  make install

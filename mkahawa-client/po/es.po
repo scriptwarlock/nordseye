@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cclcfox 0.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-14 23:24+0300\n"
+"PO-Revision-Date: 2005-03-01 02:38-0300\n"
+"Last-Translator: Bruno Deferrari <tizoc@users.sourceforge.net>\n"
+"Language-Team: tizoc <tizoc@users.sourceforge.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/gui.cpp:275
+msgid "Time:"
+msgstr "Tiempo:"
+
+#: src/gui.cpp:288 src/cclcfox.cpp:549
+msgid "Owed:"
+msgstr "A pagar:"
+
+#: src/gui.cpp:299
+msgid "Other:"
+msgstr "Otros:"
+
+#: src/gui.cpp:310
+#, fuzzy
+msgid "Password"
+msgstr "Clave:"
+
+#: src/gui.cpp:314
+msgid "Assist"
+msgstr ""
+
+#: src/gui.cpp:319
+#, fuzzy
+msgid "End Session"
+msgstr "Terminar sesión"
+
+#: src/gui.cpp:387
+msgid "Admin Message"
+msgstr ""
+
+#: src/gui.cpp:388
+msgid "Message from Administrator"
+msgstr ""
+
+#: src/gui.cpp:394
+msgid "   Ok   "
+msgstr ""
+
+#: src/gui.cpp:520
+msgid "Change password"
+msgstr "Cambiar clave"
+
+#: src/gui.cpp:521
+msgid "Old password:"
+msgstr "Clave vieja:"
+
+#: src/gui.cpp:523
+msgid "New password:"
+msgstr "Clave nueva:"
+
+#: src/gui.cpp:525
+msgid "New password (again):"
+msgstr "Clave nueva (de nuevo):"
+
+#: src/gui.cpp:528
+msgid "Ok"
+msgstr "Ok"
+
+#: src/gui.cpp:529
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/gui.cpp:542
+msgid "Error"
+msgstr "Error"
+
+#: src/gui.cpp:543
+#, fuzzy
+msgid "The two given passwords were different"
+msgstr "Las dos contraseñas dadas son distintas"
+
+#: src/cclcfox.cpp:401
+msgid "Message From Manager"
+msgstr ""
+
+#: src/cclcfox.cpp:505
+msgid "administrator"
+msgstr ""
+
+#: src/cclcfox.cpp:547
+msgid "Balance:"
+msgstr ""
+
+#: src/cclcfox.cpp:686
+msgid "Was unable to write update file"
+msgstr ""
+
+#: src/cclcfox.cpp:752
+#, c-format
+msgid "You have less than %d mins to browse."
+msgstr ""
+
+#: src/locker.cpp:267
+msgid "Click here to start"
+msgstr "Click aquí para comenzar"
+
+#: src/main.cpp:54
+#, c-format
+msgid ""
+"Usage: %s -host <server> -name <myname> [options]\n"
+"\n"
+"<server>: the server's hostname or IP\n"
+"<myname>: the name this client is going to be identified with\n"
+"\n"
+"Options:\n"
+"\t-port <port>: Connect to the specified port (default: 2999).\n"
+"\t-nossl: do not use SSL to connect (default: use SSL).\n"
+"\t-certpass <password>: password used for the cerfificate (default: none).\n"
+"\t                      Ignored if not using SSL (-nossl option enabled).\n"
+msgstr ""
+"Modo de uso: %s -host <servidor> -name <minombre> [opciones]\n"
+"\n"
+"<servidor>: el nombre o el IP del servidor\n"
+"<minombre>: el nombre con el cual este cliente será identificado\n"
+"\n"
+"Opciones:\n"
+"\t-port <puerto>: Conectar al puerto especificado (defecto: 2999)\n"
+"\t-nossl: no usar SSL en la conección (defecto: usar SSL)\n"
+"\t-certpass <clave>: clave usada para el certificado (defecto: nada)\n"
+"\t          Ingnorado si no se usa SSL (si se usa la opción -nossl).\n"
+
+#: src/main.cpp:87
+#, c-format
+msgid "[E]Invalid option %s\n"
+msgstr "[E]Opción inválida %s\n"
+
+#: src/main.cpp:100
+msgid "[E]File \"cert.pem\" not found!!\n"
+msgstr "[E]Archivo \"cert.pem\" no encontrado!!\n"
+
+#: src/main.cpp:102
+msgid "[E]File \"CA.pem\" not found!!\n"
+msgstr "[E]Archivo \"CA.pem\" no encontrado!!\n"
+
+#~ msgid "Set password"
+#~ msgstr "Cambiar clave"
+
+#~ msgid "Member ID:"
+#~ msgstr "ID de Socio:"

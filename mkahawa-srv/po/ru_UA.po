@@ -1,0 +1,1624 @@
+# Ukrainian translation of mkahawa.
+# Copyright (C) 2010 Dmitry Nikitin
+# This file is distributed under the same license as the mkahawa package.
+# Dmitry Nikitin <luckas_fb@mail.ru>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-23 18:20-0500\n"
+"PO-Revision-Date: 2010-05-27 20:28+0300\n"
+"Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
+"Language-Team: Ukrainian <xfce4-devel@xfce.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Ukrainian\n"
+"X-Poedit-Country: UKRAINE\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../src/CashingFrame.cpp:79 ../src/EmployeesFrame.cpp:101
+#: ../src/ProductsFrame.cpp:29 ../src/TarifFrame.cpp:278
+msgid "Permission"
+msgstr "Права доступу"
+
+#: ../src/CashingFrame.cpp:80 ../src/EmployeesFrame.cpp:102
+#: ../src/ProductsFrame.cpp:30 ../src/TarifFrame.cpp:279
+msgid ""
+"Unable to access this feature.\n"
+" Contact the Administrator"
+msgstr ""
+"Немає доступу до цієї опції.\n"
+" Зв'яжіться з Адміном"
+
+#: ../src/CashingFrame.cpp:115 ../src/CashingFrame.cpp:414
+msgid "Client:"
+msgstr "Клієнт:"
+
+#. applychanges = new FXButton(hframe1,_(""),NULL,this,
+#. ID_APPLY,FRAME_RAISED|FRAME_THICK);
+#: ../src/CashingFrame.cpp:117 ../src/CashingFrame.cpp:128
+#: ../src/EmployeesFrame.cpp:51 ../src/ProductsFrame.cpp:109
+msgid "Edit"
+msgstr "Редагувати"
+
+#: ../src/CashingFrame.cpp:122
+msgid "Browse Time:"
+msgstr "Вибрати час:"
+
+#: ../src/CashingFrame.cpp:133 ../src/CashingFrame.cpp:460
+#: ../src/CCLWin.cpp:389
+msgid "Products:"
+msgstr "Товари:"
+
+#: ../src/CashingFrame.cpp:146 ../src/CCLWin.cpp:294
+#: ../src/EmployeesFrame.cpp:62 ../src/EmployeesFrame.cpp:491
+#: ../src/MembersFrame.cpp:315 ../src/ProductsFrame.cpp:132
+#: ../src/ProductsFrame.cpp:148 ../src/TarifFrame.cpp:587
+#: ../src/TicketsBox.cpp:599 ../src/SettingsBox.cpp:438
+msgid "Name"
+msgstr "Назва"
+
+#: ../src/CashingFrame.cpp:147 ../src/LogFrame.cpp:96 ../src/LogFrame.cpp:106
+#: ../src/LogFrame.cpp:118 ../src/LogFrame.cpp:926 ../src/ReportFrame.cpp:97
+#: ../src/ReportFrame.cpp:107 ../src/ReportFrame.cpp:119
+#: ../src/ReportFrame.cpp:930
+msgid "Amount"
+msgstr "Кількість"
+
+#: ../src/CashingFrame.cpp:148 ../src/LogFrame.cpp:85 ../src/LogFrame.cpp:107
+#: ../src/ProductsFrame.cpp:133 ../src/ReportFrame.cpp:86
+#: ../src/ReportFrame.cpp:108 ../src/TarifFrame.cpp:139
+msgid "Price"
+msgstr "Ціна"
+
+#: ../src/CashingFrame.cpp:149
+msgid "Time Interval:"
+msgstr "Інтервал часу:"
+
+#: ../src/CashingFrame.cpp:157 ../src/CCLWin.cpp:302 ../src/LogFrame.cpp:82
+#: ../src/NotpaidFrame.cpp:33 ../src/ReportFrame.cpp:83
+#: ../src/TarifFrame.cpp:67
+msgid "Start"
+msgstr "Розпочато"
+
+#: ../src/CashingFrame.cpp:158
+msgid "Duration"
+msgstr "Тривалість"
+
+#: ../src/CashingFrame.cpp:162
+msgid "Total Duration:"
+msgstr "Всього тривалість:"
+
+#: ../src/CashingFrame.cpp:171
+msgid "Total Amount:"
+msgstr "Всього кількість:"
+
+#: ../src/CashingFrame.cpp:181 ../src/CashingFrame.cpp:590
+msgid "Discount:"
+msgstr "Знижка:"
+
+#: ../src/CashingFrame.cpp:185
+msgid "Cash"
+msgstr "Готівка"
+
+#: ../src/CashingFrame.cpp:187
+msgid "Log Cancelled"
+msgstr "Відмінено стеження"
+
+#: ../src/CashingFrame.cpp:189
+msgid "Cancel Sale"
+msgstr "Відміна продажу"
+
+#: ../src/CashingFrame.cpp:191
+msgid "Calc Change"
+msgstr "Підрахувати зміни"
+
+#: ../src/CashingFrame.cpp:421
+msgid "Total time:"
+msgstr "Всього часу:"
+
+#: ../src/CashingFrame.cpp:466
+msgid "Workstation time:"
+msgstr "Час станції:"
+
+#: ../src/CashingFrame.cpp:526
+msgid "Tax"
+msgstr "Податок"
+
+#: ../src/CashingFrame.cpp:552 ../src/LogFrame.cpp:1046
+#: ../src/ProductsFrame.cpp:642 ../src/ReportFrame.cpp:1011
+msgid "Ticket number:"
+msgstr "Номер квитка:"
+
+#: ../src/CashingFrame.cpp:559 ../src/LogFrame.cpp:1053
+#: ../src/ProductsFrame.cpp:649 ../src/ReportFrame.cpp:1018
+msgid "Date:"
+msgstr "Дата:"
+
+#: ../src/CashingFrame.cpp:568 ../src/LogFrame.cpp:168
+#: ../src/ReportFrame.cpp:169
+msgid "Member:"
+msgstr "Член:"
+
+#: ../src/CashingFrame.cpp:583
+msgid "Subtotal:"
+msgstr "Підсумок:"
+
+#: ../src/CashingFrame.cpp:610
+msgid "Total price:"
+msgstr "Всього ціна:"
+
+#: ../src/CashingFrame.cpp:757
+msgid "Change member"
+msgstr "Вибрати члена"
+
+#: ../src/CashingFrame.cpp:758
+msgid "Enter the member ID (0 for none):"
+msgstr "Ввести ID для члена (0 без змін):"
+
+#: ../src/CashingFrame.cpp:834
+msgid "New price"
+msgstr "Нова ціна"
+
+#: ../src/CashingFrame.cpp:835
+msgid "Enter the new price:"
+msgstr "Введіть нову ціну:"
+
+#: ../src/CashingFrame.cpp:898
+msgid "Edit ticket format"
+msgstr "Редагувати форму квитка"
+
+#: ../src/CashingFrame.cpp:901
+msgid "Header:"
+msgstr "Заголовок:"
+
+#: ../src/CashingFrame.cpp:906
+msgid "Footer:"
+msgstr "Нижня частина:"
+
+#: ../src/CashingFrame.cpp:913
+msgid "Tax name:"
+msgstr "Назва податку:"
+
+#: ../src/CashingFrame.cpp:917
+msgid "Tax %:"
+msgstr "Податок %:"
+
+#: ../src/CashingFrame.cpp:923 ../src/EmployeesFrame.cpp:356
+#: ../src/EmployeesFrame.cpp:671 ../src/ProductsFrame.cpp:340
+#: ../src/ProductsFrame.cpp:392 ../src/TarifFrame.cpp:502
+#: ../src/TarifFrame.cpp:583 ../src/TicketsBox.cpp:596
+#: ../src/SettingsBox.cpp:435
+msgid "Accept"
+msgstr "Застосувати"
+
+#: ../src/CashingFrame.cpp:925 ../src/CCLWin.cpp:665 ../src/CCLWin.cpp:2194
+#: ../src/CCLWin.cpp:2326 ../src/EmployeesFrame.cpp:354
+#: ../src/EmployeesFrame.cpp:669 ../src/ProductsFrame.cpp:338
+#: ../src/ProductsFrame.cpp:390 ../src/TarifFrame.cpp:500
+#: ../src/SettingsBox.cpp:192
+msgid "Cancel"
+msgstr "Відмінити"
+
+#: ../src/CashingFrame.cpp:981
+msgid "Calculate change"
+msgstr "Підрахувати зміни"
+
+#: ../src/CashingFrame.cpp:982
+msgid "The client paid with:"
+msgstr "Спосіб оплати клієнта:"
+
+#: ../src/CashingFrame.cpp:986 ../src/CashingFrame.cpp:992
+msgid "Change:"
+msgstr "Вибрати:"
+
+#: ../src/CCLWin.cpp:167
+msgid "Information Update"
+msgstr "Оновлення інформації"
+
+#: ../src/CCLWin.cpp:195
+msgid "Clients"
+msgstr "Клієнти"
+
+#: ../src/CCLWin.cpp:199
+msgid "Log"
+msgstr "Стеження"
+
+#: ../src/CCLWin.cpp:202
+msgid "Report"
+msgstr "Звіт"
+
+#: ../src/CCLWin.cpp:226
+msgid "\tStart a Session"
+msgstr "\tПочати сесію"
+
+#: ../src/CCLWin.cpp:230
+msgid "\tPause Session"
+msgstr "\tПауза сесії"
+
+#: ../src/CCLWin.cpp:234
+msgid "\tStop Session"
+msgstr "\tЗупинити сесію"
+
+#: ../src/CCLWin.cpp:238
+msgid "\tContinue Session"
+msgstr "\tПродовжити сесію"
+
+#: ../src/CCLWin.cpp:242
+msgid "\tSwap Sessions"
+msgstr "\tОбміняти сесії"
+
+#: ../src/CCLWin.cpp:246
+msgid "\tSet Timeout"
+msgstr "\tВстановити таймаут"
+
+#: ../src/CCLWin.cpp:250
+msgid "\tMessage Client"
+msgstr "\tПовідомлення клієнта"
+
+#: ../src/CCLWin.cpp:254
+msgid "\tCyber Settings"
+msgstr "\tНалаштування програми"
+
+#: ../src/CCLWin.cpp:258
+msgid "\tStaff Login"
+msgstr "\tЛогін працівника"
+
+#: ../src/CCLWin.cpp:262
+msgid "\tNew Client"
+msgstr "\tДодати клієнта"
+
+#: ../src/CCLWin.cpp:266
+msgid "\tDelete Client"
+msgstr "\tВидалити клієнта"
+
+#: ../src/CCLWin.cpp:277
+msgid "Client Icons"
+msgstr "Значок клієнта"
+
+#: ../src/CCLWin.cpp:280
+msgid "Client Details"
+msgstr "Детально про клієнта"
+
+#: ../src/CCLWin.cpp:300 ../src/NotpaidFrame.cpp:31
+msgid "Client"
+msgstr "Клієнт"
+
+#: ../src/CCLWin.cpp:301 ../src/EmployeesFrame.cpp:65
+msgid "Status"
+msgstr "Стан"
+
+#: ../src/CCLWin.cpp:303 ../src/LogFrame.cpp:83 ../src/NotpaidFrame.cpp:34
+#: ../src/ReportFrame.cpp:84
+msgid "End"
+msgstr "Кінець"
+
+#: ../src/CCLWin.cpp:304
+msgid "Length"
+msgstr "Тривалість"
+
+#: ../src/CCLWin.cpp:305
+msgid "Session Cost"
+msgstr "Вартість сеансу"
+
+#: ../src/CCLWin.cpp:306
+msgid "Other"
+msgstr "Інше"
+
+#: ../src/CCLWin.cpp:338
+msgid "\tGrant 10 Minutes"
+msgstr "\tНадати 10 хвилин"
+
+#: ../src/CCLWin.cpp:342
+msgid "\tGrant 20 Minutes"
+msgstr "\tНадати 20 хвилин"
+
+#: ../src/CCLWin.cpp:346
+msgid "\tGrant 30 Minutes"
+msgstr "\tНадати 30 хвилин"
+
+#: ../src/CCLWin.cpp:350
+msgid "\tGrant 1 Hour"
+msgstr "\tНадати 1 годину"
+
+#: ../src/CCLWin.cpp:368 ../src/LogFrame.cpp:60 ../src/MSGWin.cpp:36
+#: ../src/ReportFrame.cpp:59
+msgid "Time:"
+msgstr "Час:"
+
+#: ../src/CCLWin.cpp:375
+msgid "Total:"
+msgstr "Всього:"
+
+#: ../src/CCLWin.cpp:382
+msgid "Terminal:"
+msgstr "Термінал:"
+
+#: ../src/CCLWin.cpp:400 ../src/CCLWin.cpp:422
+msgid "Blank Screen"
+msgstr "Пустий екран"
+
+#: ../src/CCLWin.cpp:401 ../src/CCLWin.cpp:667
+msgid "Set Member"
+msgstr "Позначити членом"
+
+#: ../src/CCLWin.cpp:402 ../src/CCLWin.cpp:423
+msgid "Reboot Machine"
+msgstr "Перезавантажити комп'ютер"
+
+#: ../src/CCLWin.cpp:403
+msgid "Shutdown Machine"
+msgstr "Вимкнути комп'ютер"
+
+#: ../src/CCLWin.cpp:404 ../src/CCLWin.cpp:425
+msgid "Update Client"
+msgstr "Оновити клієнта"
+
+#: ../src/CCLWin.cpp:406 ../src/CCLWin.cpp:428
+msgid "User May Start Session"
+msgstr "Користувач мусить почати сеанс"
+
+#: ../src/CCLWin.cpp:409 ../src/CCLWin.cpp:431
+msgid "Member May Start Session"
+msgstr "Член має почати сеанс"
+
+#: ../src/CCLWin.cpp:412 ../src/CCLWin.cpp:434
+msgid "Login by Ticket"
+msgstr "Увійти по квитку"
+
+#: ../src/CCLWin.cpp:415 ../src/CCLWin.cpp:437
+msgid "Allow Assistance Request"
+msgstr "Дозволити прохання про допомогу"
+
+#: ../src/CCLWin.cpp:424
+msgid "Shutdown Client"
+msgstr "Вимкнути клієнта"
+
+#: ../src/CCLWin.cpp:426 ../src/CCLWin.cpp:1857 ../src/CCLWin.cpp:1872
+#: ../src/CCLWin.cpp:1876
+msgid "Admin Password"
+msgstr "Пароль Адміністратора"
+
+#. BUTTON_NORMAL|LAYOUT_CENTER_X| LAYOUT_FILL_X);
+#: ../src/CCLWin.cpp:445 ../src/LogFrame.cpp:144 ../src/ReportFrame.cpp:148
+msgid "Products"
+msgstr "Товари"
+
+#: ../src/CCLWin.cpp:449
+msgid "Cashing"
+msgstr "Продажі"
+
+#: ../src/CCLWin.cpp:453 ../src/MembersFrame.cpp:59
+#: ../src/MembersFrame.cpp:302
+msgid "Tariff"
+msgstr "Тарифи"
+
+#: ../src/CCLWin.cpp:457
+msgid "Members / Tickets"
+msgstr "Члени / Квитки"
+
+#: ../src/CCLWin.cpp:462 ../src/LogFrame.cpp:87 ../src/LogFrame.cpp:109
+#: ../src/LogFrame.cpp:128 ../src/ReportFrame.cpp:88
+#: ../src/ReportFrame.cpp:110 ../src/ReportFrame.cpp:129
+msgid "Staff"
+msgstr "Працівники"
+
+#: ../src/CCLWin.cpp:543
+msgid "Exit Mkahawa"
+msgstr "Вийти з Mkahawa"
+
+#: ../src/CCLWin.cpp:544
+msgid "Do you really want to quit Mkahawa?"
+msgstr "Ви дійсно бажаєте вийти з Mkahawa?"
+
+#: ../src/CCLWin.cpp:629
+msgid "Member"
+msgstr "Член"
+
+#: ../src/CCLWin.cpp:630
+msgid "Member ID (0 for none):"
+msgstr "ID члена (0 без змін):"
+
+#: ../src/CCLWin.cpp:648 ../src/LogFrame.cpp:348 ../src/LogFrame.cpp:351
+#: ../src/LogFrame.cpp:354 ../src/MembersFrame.cpp:210
+#: ../src/MembersFrame.cpp:386 ../src/ReportFrame.cpp:353
+#: ../src/ReportFrame.cpp:356 ../src/ReportFrame.cpp:359
+#: ../src/TarifFrame.cpp:641
+msgid "Error"
+msgstr "Помилка"
+
+#: ../src/CCLWin.cpp:648
+msgid "Invalid member"
+msgstr "Невірний член"
+
+#: ../src/CCLWin.cpp:657
+msgid "Set Member to Client"
+msgstr "Призначити члена для клієнта"
+
+#: ../src/CCLWin.cpp:669
+msgid "Member Name"
+msgstr "Ім'я члена"
+
+#. too little credit
+#: ../src/CCLWin.cpp:708
+msgid "Overdrawn Account"
+msgstr "Перевитрати рахунку"
+
+#: ../src/CCLWin.cpp:709
+msgid "Replenish the account first."
+msgstr "Спочатку поповнення рахунку."
+
+#: ../src/CCLWin.cpp:1198 ../src/CCLWin.cpp:1266
+msgid "account has insufficient credit"
+msgstr "рахунок має недостатній кредит"
+
+#: ../src/CCLWin.cpp:1407
+msgid "Wrong old password."
+msgstr "Неправильний старий пароль."
+
+#: ../src/CCLWin.cpp:1661
+msgid "Client Update File"
+msgstr "Клієнт оновив файл"
+
+#: ../src/CCLWin.cpp:1662
+msgid "*.upd,*.upx"
+msgstr "*.upd,*.upx"
+
+#: ../src/CCLWin.cpp:1665
+msgid "No File Selected"
+msgstr "Не вибрано файл"
+
+#: ../src/CCLWin.cpp:1666
+msgid "Select an Update File?"
+msgstr "Вибрати файл оновлення?"
+
+#: ../src/CCLWin.cpp:1724
+msgid "Unable to open update file\n"
+msgstr "Неможливо відкрити файл оновлення\n"
+
+#: ../src/CCLWin.cpp:1733
+msgid "Unable to read update file\n"
+msgstr "Неможливо прочитати файл оновлення\n"
+
+#: ../src/CCLWin.cpp:1768
+msgid "Only Admin can update clients."
+msgstr "Тільки Адміністратор може оновлювати клієнтів."
+
+#: ../src/CCLWin.cpp:1774
+msgid "Only connected Clients can be updated"
+msgstr "Тільки з'єднані клієнти можуть бути оновлені"
+
+#. a client is being updated
+#: ../src/CCLWin.cpp:1781 ../src/CCLWin.cpp:1902
+msgid "Update in Progress"
+msgstr "Оновлення в процесі"
+
+#: ../src/CCLWin.cpp:1782
+msgid "Updates can only be made one at a time."
+msgstr "Оновлення може бути здійснено одне за раз."
+
+#: ../src/CCLWin.cpp:1786
+msgid "Active Client"
+msgstr "Активний клієнт"
+
+#: ../src/CCLWin.cpp:1787
+msgid "End the client session before updating."
+msgstr "Завершіть сеанс клієнта перед оновленням."
+
+#: ../src/CCLWin.cpp:1792
+msgid "Update File not found\n"
+msgstr "Не знайдено файл оновлення\n"
+
+#: ../src/CCLWin.cpp:1800
+msgid "Unable to open file\n"
+msgstr "Неможливо відкрити файл\n"
+
+#: ../src/CCLWin.cpp:1825
+msgid "Not a Mkahawa Update File\n"
+msgstr "Це не файл оновлення Mkahawa\n"
+
+#: ../src/CCLWin.cpp:1858
+msgid "New Client Admin Password: "
+msgstr "Новий адміністративний пароль клієнта: "
+
+#: ../src/CCLWin.cpp:1873
+msgid "Password has been sent!"
+msgstr "Пароль відіслано!"
+
+#: ../src/CCLWin.cpp:1877
+msgid "Password is invalid!"
+msgstr "Пароль неправильний!"
+
+#: ../src/CCLWin.cpp:1903
+msgid "Current client is being updated."
+msgstr "Поточного клієнта було оновлено."
+
+#: ../src/CCLWin.cpp:2023
+msgid "Adjust Timeout"
+msgstr "Додати затримку"
+
+#: ../src/CCLWin.cpp:2056
+msgid "About"
+msgstr "Про програму"
+
+#: ../src/CCLWin.cpp:2057
+msgid ""
+"Modified by Bernard Owuor, Unwire Technologies (owuor@unwiretechnologies.net)"
+msgstr ""
+"Модифіковано Bernard Owuor, Unwire Technologies (owuor@unwiretechnologies."
+"net)"
+
+#: ../src/CCLWin.cpp:2099 ../src/LogFrame.cpp:84 ../src/LogFrame.cpp:95
+#: ../src/NotpaidFrame.cpp:32 ../src/ReportFrame.cpp:85
+#: ../src/ReportFrame.cpp:96
+msgid "Time"
+msgstr "Час"
+
+#: ../src/CCLWin.cpp:2099 ../src/TarifFrame.cpp:484
+msgid "Minutes:"
+msgstr "Хвилин:"
+
+#: ../src/CCLWin.cpp:2183
+msgid "Confirm Action"
+msgstr "Підтвердити дію"
+
+#: ../src/CCLWin.cpp:2189
+msgid "Apply this action to all stations?"
+msgstr "Застосувати цю дію до всіх станцій?"
+
+#: ../src/CCLWin.cpp:2192 ../src/TarifFrame.cpp:77
+msgid "Apply"
+msgstr "Застосувати"
+
+#: ../src/CCLWin.cpp:2300
+msgid "Add new Client"
+msgstr "Додати нового клієнта"
+
+#: ../src/CCLWin.cpp:2301
+msgid "New Client Name:"
+msgstr "Ім'я нового клієнта:"
+
+#: ../src/CCLWin.cpp:2315
+msgid "Delete Client?"
+msgstr "Видалити клієнта?"
+
+#: ../src/CCLWin.cpp:2328 ../src/EmployeesFrame.cpp:53
+#: ../src/MembersFrame.cpp:57 ../src/ProductsFrame.cpp:107
+#: ../src/TarifFrame.cpp:75 ../src/QTicketsBox.cpp:125
+msgid "Delete"
+msgstr "Видалити"
+
+#: ../src/CCLWin.cpp:2657
+msgid "Add Products"
+msgstr "Всі товари"
+
+#: ../src/CCLWin.cpp:2658
+msgid "Enter the quantity:"
+msgstr "Введіть кількість:"
+
+#: ../src/CCLWin.cpp:2675
+msgid "Remove Products"
+msgstr "Видалити товари"
+
+#: ../src/CCLWin.cpp:2676
+msgid "Quantity:"
+msgstr "Кількість:"
+
+#: ../src/CCLWin.cpp:2707
+msgid "Staff Login"
+msgstr "Логін працівника"
+
+#: ../src/CCLWin.cpp:2708
+msgid "User Name:"
+msgstr "Ім'я користувача:"
+
+#: ../src/CCLWin.cpp:2710
+msgid "Password:"
+msgstr "Пароль:"
+
+#: ../src/CCLWin.cpp:2716
+msgid "  Quit  "
+msgstr "  Вийти "
+
+#: ../src/CCLWin.cpp:2719
+msgid "   Ok   "
+msgstr "   Так  "
+
+#: ../src/CCLWin.cpp:2734
+msgid "Welcome"
+msgstr "Вітаємо"
+
+#: ../src/CCLWin.cpp:2735
+msgid "Welcome to Mkahawa Cyber Manager"
+msgstr "Вітаємо в кібер менеджері Mkahawa"
+
+#: ../src/CCLWin.cpp:2746
+msgid "Login Failure"
+msgstr "Увійти не вдалося"
+
+#: ../src/CCLWin.cpp:2748
+msgid "Invalid Username or Password"
+msgstr "Невірне ім'я користувача або пароль"
+
+#: ../src/CCLWin.cpp:2763
+msgid "Logout"
+msgstr "Вийти"
+
+#: ../src/CCLWin.cpp:2764
+msgid "Do you want to log out?"
+msgstr "Бажаєте вийти?"
+
+#: ../src/CCLWin.cpp:2800 ../src/CCLWin.cpp:2832 ../src/CCLWin.cpp:2860
+msgid "Message to Client"
+msgstr "Повідомлення для клієнта"
+
+#: ../src/CCLWin.cpp:2801 ../src/CCLWin.cpp:2833 ../src/CCLWin.cpp:2861
+msgid "Message:"
+msgstr "Повідомлення:"
+
+#. min10btn =
+#. new FXButton(speedbar,_("\tGrant 10 Minutes"),min10icon,this,ID_10MIN,
+#. BUTTON_TOOLBAR|FRAME_RAISED|LAYOUT_TOP|LAYOUT_LEFT,
+#. 0,0,0,0,0,0,0,0);
+#: ../src/EmployeesFrame.cpp:47 ../src/MembersFrame.cpp:55
+#: ../src/ProductsFrame.cpp:105 ../src/TarifFrame.cpp:79
+msgid "New"
+msgstr "Додати"
+
+#: ../src/EmployeesFrame.cpp:61
+msgid "UserID"
+msgstr "ID користувача"
+
+#: ../src/EmployeesFrame.cpp:63 ../src/MembersFrame.cpp:77
+msgid "Phone"
+msgstr "Телефон"
+
+#: ../src/EmployeesFrame.cpp:64
+msgid "Email"
+msgstr "Пошта"
+
+#: ../src/EmployeesFrame.cpp:67
+msgid "Staff Details"
+msgstr "Деталі працівника"
+
+#: ../src/EmployeesFrame.cpp:70 ../src/MembersFrame.cpp:70
+#: ../src/ProductsFrame.cpp:323
+msgid "Name:"
+msgstr "Ім'я:"
+
+#: ../src/EmployeesFrame.cpp:73
+msgid "E-Mail:"
+msgstr "Пошта:"
+
+#: ../src/EmployeesFrame.cpp:76
+msgid "Phone Number:"
+msgstr "Номер телефону:"
+
+#: ../src/EmployeesFrame.cpp:214
+msgid "Admin Deletion"
+msgstr "Видалення Адмінісмтратора"
+
+#: ../src/EmployeesFrame.cpp:215
+msgid "Administrator cannot be deleted"
+msgstr "Адміністратор не може бути видалений"
+
+#: ../src/EmployeesFrame.cpp:269
+msgid "Edit Staff Info"
+msgstr "Редагувати інформацію про працівника"
+
+#: ../src/EmployeesFrame.cpp:296 ../src/EmployeesFrame.cpp:611
+msgid "Username: "
+msgstr "Ім'я користувача:"
+
+#: ../src/EmployeesFrame.cpp:301 ../src/EmployeesFrame.cpp:614
+msgid "Password: "
+msgstr "Пароль:"
+
+#: ../src/EmployeesFrame.cpp:305 ../src/EmployeesFrame.cpp:619
+msgid "Full Name: "
+msgstr "Повне ім'я:"
+
+#: ../src/EmployeesFrame.cpp:309 ../src/EmployeesFrame.cpp:624
+msgid "Email: "
+msgstr "Пошта:"
+
+#: ../src/EmployeesFrame.cpp:312 ../src/EmployeesFrame.cpp:627
+msgid "Phone: "
+msgstr "Телефон:"
+
+#: ../src/EmployeesFrame.cpp:315 ../src/EmployeesFrame.cpp:630
+msgid "Permissions:- "
+msgstr "Права доступу:- "
+
+#: ../src/EmployeesFrame.cpp:322 ../src/EmployeesFrame.cpp:638
+msgid "Edit Tariffs"
+msgstr "Редагувати тарифи"
+
+#: ../src/EmployeesFrame.cpp:324 ../src/EmployeesFrame.cpp:640
+msgid "Change Tariffs"
+msgstr "Вибрати тарифи"
+
+#: ../src/EmployeesFrame.cpp:326 ../src/EmployeesFrame.cpp:642
+msgid "Edit Member Info"
+msgstr "Редагувати інформацію про члена"
+
+#: ../src/EmployeesFrame.cpp:328 ../src/EmployeesFrame.cpp:644
+msgid "Set Member Clients"
+msgstr "Призначити члена клієнтам"
+
+#: ../src/EmployeesFrame.cpp:330 ../src/EmployeesFrame.cpp:646
+msgid "General Configuration"
+msgstr "Основні налаштування"
+
+#: ../src/EmployeesFrame.cpp:332 ../src/EmployeesFrame.cpp:648
+#: ../src/ProductsFrame.cpp:493
+msgid "Sell Products"
+msgstr "Продаж товарів"
+
+#: ../src/EmployeesFrame.cpp:334 ../src/EmployeesFrame.cpp:650
+msgid "Edit Products"
+msgstr "Редагувати товари"
+
+#: ../src/EmployeesFrame.cpp:336 ../src/EmployeesFrame.cpp:652
+msgid "Stock Products"
+msgstr "Знижки на товари"
+
+#: ../src/EmployeesFrame.cpp:340 ../src/EmployeesFrame.cpp:655
+msgid "Receive Payments"
+msgstr "Отримано платежів"
+
+#: ../src/EmployeesFrame.cpp:342 ../src/EmployeesFrame.cpp:657
+msgid "Edit Payments"
+msgstr "Редагувати платежі"
+
+#: ../src/EmployeesFrame.cpp:344 ../src/EmployeesFrame.cpp:659
+msgid "Give Discounts"
+msgstr "Надати знижку"
+
+#: ../src/EmployeesFrame.cpp:346 ../src/EmployeesFrame.cpp:661
+msgid "Cancel Payments"
+msgstr "Відмінити платежі"
+
+#: ../src/EmployeesFrame.cpp:348 ../src/EmployeesFrame.cpp:663
+msgid "View Reports"
+msgstr "Переглянути звіти"
+
+#: ../src/EmployeesFrame.cpp:350 ../src/EmployeesFrame.cpp:665
+msgid "Print Reports"
+msgstr "Надрукувати звіти"
+
+#: ../src/EmployeesFrame.cpp:430
+msgid "\t"
+msgstr "\t"
+
+#: ../src/EmployeesFrame.cpp:477
+msgid "Usrlvl"
+msgstr "Usrlvl"
+
+#: ../src/EmployeesFrame.cpp:486
+msgid "Select"
+msgstr "Вибрати"
+
+#: ../src/EmployeesFrame.cpp:490 ../src/MembersFrame.cpp:314
+#: ../src/TarifFrame.cpp:586 ../src/TicketsBox.cpp:598
+#: ../src/SettingsBox.cpp:437
+msgid "ID"
+msgstr "ID"
+
+#: ../src/EmployeesFrame.cpp:527
+msgid "Set Password"
+msgstr "Встановити пароль"
+
+#: ../src/EmployeesFrame.cpp:528
+msgid "Type the password: "
+msgstr "Наберіть пароль: "
+
+#: ../src/EmployeesFrame.cpp:592
+msgid "Staff Member Info"
+msgstr "Інформація про працівника члена"
+
+#: ../src/LogFrame.cpp:62 ../src/ReportFrame.cpp:63
+msgid "Sessions: "
+msgstr "Сеанси:"
+
+#: ../src/LogFrame.cpp:64 ../src/ReportFrame.cpp:65
+msgid "Products: "
+msgstr "Товари:"
+
+#: ../src/LogFrame.cpp:66 ../src/ReportFrame.cpp:67
+msgid "Expenses: "
+msgstr "Витрати:"
+
+#: ../src/LogFrame.cpp:68 ../src/ReportFrame.cpp:69
+msgid "Total: "
+msgstr "Всього:"
+
+#: ../src/LogFrame.cpp:81 ../src/LogFrame.cpp:93 ../src/LogFrame.cpp:104
+#: ../src/ReportFrame.cpp:82 ../src/ReportFrame.cpp:94
+#: ../src/ReportFrame.cpp:105
+msgid "Station"
+msgstr "Станція"
+
+#: ../src/LogFrame.cpp:86 ../src/LogFrame.cpp:108 ../src/ReportFrame.cpp:87
+#: ../src/ReportFrame.cpp:109
+msgid "Discount"
+msgstr "Знижка"
+
+#. BUTTON_NORMAL|LAYOUT_CENTER_X|LAYOUT_FILL_X);
+#. logexpensebtn = new FXButton(hframe10,_("Log Expense"),NULL,this,
+#. ID_LOGEXPENSE,BUTTON_NORMAL|LAYOUT_CENTER_X|
+#. LAYOUT_FILL_X);
+#: ../src/LogFrame.cpp:94 ../src/LogFrame.cpp:141 ../src/ReportFrame.cpp:95
+#: ../src/ReportFrame.cpp:144
+msgid "Sessions"
+msgstr "Сеанси"
+
+#: ../src/LogFrame.cpp:103 ../src/LogFrame.cpp:116 ../src/ReportFrame.cpp:104
+#: ../src/ReportFrame.cpp:117
+msgid "Product"
+msgstr "Товар"
+
+#: ../src/LogFrame.cpp:105 ../src/LogFrame.cpp:126 ../src/ReportFrame.cpp:106
+#: ../src/ReportFrame.cpp:127
+msgid "Date"
+msgstr "Дата"
+
+#: ../src/LogFrame.cpp:117 ../src/ReportFrame.cpp:118
+msgid "Units"
+msgstr "Одиниці"
+
+#: ../src/LogFrame.cpp:125 ../src/LogFrame.cpp:923 ../src/ReportFrame.cpp:126
+#: ../src/ReportFrame.cpp:927
+msgid "Description"
+msgstr "Опис"
+
+#: ../src/LogFrame.cpp:127 ../src/ReportFrame.cpp:128
+msgid "Spent"
+msgstr "Використано"
+
+#: ../src/LogFrame.cpp:133 ../src/ReportFrame.cpp:134
+#: ../src/TicketsBox.cpp:131 ../src/QTicketsBox.cpp:123
+msgid "Clear"
+msgstr "Очистити"
+
+#. BUTTON_NORMAL|LAYOUT_CENTER_X|LAYOUT_FILL_X);
+#: ../src/LogFrame.cpp:135 ../src/ReportFrame.cpp:137
+msgid "Refresh"
+msgstr "Оновити"
+
+#. BUTTON_NORMAL|LAYOUT_CENTER_X| LAYOUT_FILL_X);
+#: ../src/LogFrame.cpp:147
+msgid "Expenses"
+msgstr "Витрати"
+
+#. BUTTON_NORMAL|LAYOUT_CENTER_X| LAYOUT_FILL_X);
+#. BUTTON_NORMAL|LAYOUT_CENTER_X| LAYOUT_FILL_X);
+#. expensebtn = new FXButton(hframe10,_("Expenses"),NULL,this,
+#. ID_EXPENSES,BUTTON_NORMAL|LAYOUT_CENTER_X|
+#. LAYOUT_FILL_X);
+#: ../src/LogFrame.cpp:150 ../src/LogFrame.cpp:960 ../src/ReportFrame.cpp:155
+#: ../src/ReportFrame.cpp:964
+msgid "Save Report"
+msgstr "Зберегти звіт"
+
+#. BUTTON_NORMAL|LAYOUT_CENTER_X| LAYOUT_FILL_X);
+#: ../src/LogFrame.cpp:153
+msgid "Save Log"
+msgstr "Зберегти логи"
+
+#: ../src/LogFrame.cpp:159 ../src/MSGWin.cpp:40 ../src/ReportFrame.cpp:160
+msgid "From:"
+msgstr "Від:"
+
+#: ../src/LogFrame.cpp:162 ../src/LogFrame.cpp:176 ../src/ReportFrame.cpp:163
+#: ../src/ReportFrame.cpp:177
+msgid "of"
+msgstr "of"
+
+#: ../src/LogFrame.cpp:171 ../src/ReportFrame.cpp:172
+msgid "Staff:"
+msgstr "Працівник:"
+
+#: ../src/LogFrame.cpp:173 ../src/ReportFrame.cpp:174
+msgid "    To:"
+msgstr "    до:"
+
+#: ../src/LogFrame.cpp:179 ../src/ReportFrame.cpp:180
+msgid "Canceled"
+msgstr "Відмінено"
+
+#: ../src/LogFrame.cpp:181 ../src/ReportFrame.cpp:182
+msgid "Summary"
+msgstr "Загалом"
+
+#: ../src/LogFrame.cpp:184 ../src/ReportFrame.cpp:187 ../src/TarifFrame.cpp:99
+msgid "Days:"
+msgstr "Дні:"
+
+#: ../src/LogFrame.cpp:185 ../src/ReportFrame.cpp:188
+#: ../src/TarifFrame.cpp:101 ../src/TarifFrame.cpp:171
+msgid "Sun"
+msgstr "Ндл"
+
+#: ../src/LogFrame.cpp:189 ../src/ReportFrame.cpp:192
+#: ../src/TarifFrame.cpp:107 ../src/TarifFrame.cpp:171
+msgid "Mon"
+msgstr "Пнд"
+
+#: ../src/LogFrame.cpp:192 ../src/ReportFrame.cpp:195
+#: ../src/TarifFrame.cpp:111 ../src/TarifFrame.cpp:171
+msgid "Tue"
+msgstr "Втр"
+
+#: ../src/LogFrame.cpp:195 ../src/ReportFrame.cpp:198
+#: ../src/TarifFrame.cpp:115 ../src/TarifFrame.cpp:171
+msgid "Wed"
+msgstr "Срд"
+
+#: ../src/LogFrame.cpp:198 ../src/ReportFrame.cpp:201
+#: ../src/TarifFrame.cpp:119 ../src/TarifFrame.cpp:171
+msgid "Thu"
+msgstr "Чтв"
+
+#: ../src/LogFrame.cpp:201 ../src/ReportFrame.cpp:204
+#: ../src/TarifFrame.cpp:123 ../src/TarifFrame.cpp:171
+msgid "Fri"
+msgstr "Птн"
+
+#: ../src/LogFrame.cpp:204 ../src/ReportFrame.cpp:207
+#: ../src/TarifFrame.cpp:127 ../src/TarifFrame.cpp:171
+msgid "Sat"
+msgstr "Сбт"
+
+#: ../src/LogFrame.cpp:207 ../src/ReportFrame.cpp:210
+msgid "Between:"
+msgstr "Між:"
+
+#: ../src/LogFrame.cpp:210 ../src/ReportFrame.cpp:213
+msgid "and"
+msgstr "і"
+
+#. canceledcheck = new FXCheckButton(hframe5,_("Canceled"),NULL,0,
+#. CHECKBUTTON_NORMAL|LAYOUT_RIGHT);
+#: ../src/LogFrame.cpp:215 ../src/ReportFrame.cpp:218
+msgid "  Reset  "
+msgstr " Скинути "
+
+#: ../src/LogFrame.cpp:348 ../src/ReportFrame.cpp:353
+msgid "Invalid start date"
+msgstr "Неправильна дата початку"
+
+#: ../src/LogFrame.cpp:351 ../src/ReportFrame.cpp:356
+msgid "Invalid end date"
+msgstr "Неправильна дата кінця"
+
+#: ../src/LogFrame.cpp:355 ../src/ReportFrame.cpp:360
+msgid "Start date greater than end date"
+msgstr "Дата початку старіша ніж дата кінця"
+
+#: ../src/LogFrame.cpp:924 ../src/LogFrame.cpp:1058
+#: ../src/ProductsFrame.cpp:654 ../src/ReportFrame.cpp:928
+#: ../src/ReportFrame.cpp:1023
+msgid "Description:"
+msgstr "Опис:"
+
+#: ../src/LogFrame.cpp:926 ../src/ReportFrame.cpp:930
+msgid "Amount:"
+msgstr "Кількість:"
+
+#: ../src/LogFrame.cpp:949 ../src/ReportFrame.cpp:953
+msgid "Save Report File"
+msgstr "Зберегти файл звіту"
+
+#: ../src/LogFrame.cpp:950
+msgid "*.rpt"
+msgstr "*.rpt"
+
+#: ../src/LogFrame.cpp:956 ../src/ReportFrame.cpp:960
+msgid "Filename Exists"
+msgstr "Файл з такою назвою існує"
+
+#: ../src/LogFrame.cpp:957
+#, c-format
+msgid "File '%s' alreadt exists, overwrite?"
+msgstr "Файл '%s' вже існує, перезаписати?"
+
+#: ../src/LogFrame.cpp:961 ../src/ReportFrame.cpp:965
+msgid "Report was saved"
+msgstr "Звіт збережено"
+
+#: ../src/LogFrame.cpp:965 ../src/ReportFrame.cpp:969
+msgid "Report was not saved"
+msgstr "Звіт не було збережено"
+
+#: ../src/LogFrame.cpp:966 ../src/ReportFrame.cpp:970
+msgid "Report not saved"
+msgstr "Звіт не збережено"
+
+#: ../src/LogFrame.cpp:986 ../src/LogFrame.cpp:998
+msgid "Save Log File"
+msgstr "Зберегти файл логів"
+
+#: ../src/LogFrame.cpp:987
+msgid "*.log"
+msgstr "*.log"
+
+#: ../src/LogFrame.cpp:994
+msgid "File exists"
+msgstr "Такий файл існує"
+
+#: ../src/LogFrame.cpp:995
+#, c-format
+msgid "File '%s' exists, overwrite?"
+msgstr "Файл '%s' існує, перезаписати?"
+
+#: ../src/LogFrame.cpp:999
+msgid "Log file was saved"
+msgstr "Лог було збережено"
+
+#: ../src/LogFrame.cpp:1004
+msgid "Log was not saved"
+msgstr "Лог не було збережено"
+
+#: ../src/LogFrame.cpp:1005
+msgid "Log file not saved"
+msgstr "Файл логів не збережено"
+
+#: ../src/LogFrame.cpp:1065 ../src/ProductsFrame.cpp:661
+#: ../src/ReportFrame.cpp:1030
+msgid "Cost:"
+msgstr "Вартість:"
+
+#: ../src/MembersFrame.cpp:46
+msgid "User ID"
+msgstr "ID користувача"
+
+#: ../src/MembersFrame.cpp:47
+msgid "Full Name"
+msgstr "Повне ім'я"
+
+#: ../src/MembersFrame.cpp:61 ../src/SettingsBox.cpp:194
+msgid "Save"
+msgstr "Зберегти"
+
+#: ../src/MembersFrame.cpp:63
+msgid "Tickets"
+msgstr "Квитки"
+
+#: ../src/MembersFrame.cpp:66
+msgid "Member Details"
+msgstr "Деталі члена"
+
+#: ../src/MembersFrame.cpp:73
+msgid "Credit: "
+msgstr "Кредит:"
+
+#: ../src/MembersFrame.cpp:75
+msgid "Login ID:"
+msgstr "ID логіна:"
+
+#: ../src/MembersFrame.cpp:81
+msgid "Email:"
+msgstr "Пошта:"
+
+#: ../src/MembersFrame.cpp:85
+msgid " Add Credit "
+msgstr "Додати кредит"
+
+#: ../src/MembersFrame.cpp:87
+msgid "Refund Credit"
+msgstr "Повернути кредит"
+
+#: ../src/MembersFrame.cpp:89
+msgid "Reset Password"
+msgstr "Скинути пароль"
+
+#: ../src/MembersFrame.cpp:201
+msgid "Add new member"
+msgstr "Додати нового члена"
+
+#: ../src/MembersFrame.cpp:202
+msgid "Type the name:"
+msgstr "Наберіть ім'я:"
+
+#: ../src/MembersFrame.cpp:211
+msgid "The new member could not be created"
+msgstr "Не вдалось створити нового члена"
+
+#: ../src/MembersFrame.cpp:227 ../src/QTicketsBox.cpp:532
+#: ../src/SettingsBox.cpp:473
+msgid "Confirm"
+msgstr "Підтвердити"
+
+#: ../src/MembersFrame.cpp:228
+msgid "Do you really want to delete this member?"
+msgstr "Ви дійсно бажаєте видалити цього члена?"
+
+#: ../src/MembersFrame.cpp:311
+msgid "Select Tariff"
+msgstr "Вибрати тариф"
+
+#: ../src/MembersFrame.cpp:318
+msgid "0\tNo special tariff"
+msgstr "0\tБез спеціального тарифу"
+
+#: ../src/MembersFrame.cpp:356
+msgid "Add Member Credit"
+msgstr "Додати кредит члену"
+
+#: ../src/MembersFrame.cpp:357 ../src/MembersFrame.cpp:383
+msgid "Amount: "
+msgstr "Кількість: "
+
+#: ../src/MembersFrame.cpp:382
+msgid "Refund Member Credit"
+msgstr "Повернути кредит члена"
+
+#: ../src/MembersFrame.cpp:387
+msgid "Could not deduct the amount"
+msgstr "Не вдалося утримати кількість"
+
+#: ../src/ProductsFrame.cpp:111 ../src/ProductsFrame.cpp:134
+msgid "Stock"
+msgstr "Знижка"
+
+#: ../src/ProductsFrame.cpp:114
+msgid "Sell"
+msgstr "Продаж"
+
+#: ../src/ProductsFrame.cpp:117
+msgid "Complete Sale"
+msgstr "Завершено продаж"
+
+#: ../src/ProductsFrame.cpp:149
+msgid "Quantity"
+msgstr "Кількість"
+
+#. FXDataTarget codetgt(code);
+#: ../src/ProductsFrame.cpp:315
+msgid "New Product"
+msgstr "Додати товар"
+
+#: ../src/ProductsFrame.cpp:318
+msgid "Category:"
+msgstr "Категорія:"
+
+#: ../src/ProductsFrame.cpp:327 ../src/ProductsFrame.cpp:379
+#: ../src/TarifFrame.cpp:492
+msgid "Price:"
+msgstr "Ціна:"
+
+#. FXDataTarget codetgt(code);
+#: ../src/ProductsFrame.cpp:376
+msgid "Edit Product"
+msgstr "Редагувати товар"
+
+#: ../src/ProductsFrame.cpp:432
+msgid "Adjust Stock"
+msgstr "Збільшити знижку"
+
+#: ../src/ProductsFrame.cpp:433
+msgid "Quantity to add:"
+msgstr "Кількість що додається:"
+
+#: ../src/ProductsFrame.cpp:435
+msgid "Log Expense"
+msgstr "Лог витрат"
+
+#: ../src/ProductsFrame.cpp:436
+msgid "Enter the price (0 to not log):"
+msgstr "Введіть ціну (0 не буде в лозі):"
+
+#: ../src/ProductsFrame.cpp:445
+#, c-format
+msgid "Purchase: %s (%d)"
+msgstr "Придбання: %s (%d)"
+
+#: ../src/ProductsFrame.cpp:494
+msgid "Quantity Sold:"
+msgstr "Кількість проданого:"
+
+#: ../src/ProductsFrame.cpp:530
+msgid "Return Products"
+msgstr "Повернення товарів"
+
+#: ../src/ProductsFrame.cpp:531
+msgid "Quantity Returned:"
+msgstr "Кількість повернутого:"
+
+#: ../src/ReportFrame.cpp:61
+msgid "     Clients: "
+msgstr "     Клієнти: "
+
+#: ../src/ReportFrame.cpp:184
+msgid "Details"
+msgstr "Детально"
+
+#: ../src/ReportFrame.cpp:954
+msgid "*.rpt.html"
+msgstr "*.rpt.html"
+
+#: ../src/ReportFrame.cpp:961
+#, c-format
+msgid "File '%s' already exists, overwrite?"
+msgstr "Файл '%s' вже існує, перезаписати?"
+
+#: ../src/TarifFrame.cpp:43
+msgid "Fraction After"
+msgstr "Частина після"
+
+#: ../src/TarifFrame.cpp:51
+msgid "minutes."
+msgstr "хвилин."
+
+#: ../src/TarifFrame.cpp:55 ../src/TarifFrame.cpp:632
+msgid "Tariff Name:"
+msgstr "Назва тарифу:"
+
+#. TODO: setname
+#: ../src/TarifFrame.cpp:59 ../src/TicketsBox.cpp:94
+#: ../src/SettingsBox.cpp:185
+msgid "Change"
+msgstr "Вибрати"
+
+#: ../src/TarifFrame.cpp:68
+msgid "Days"
+msgstr "Дні"
+
+#. settarif = new FXButton(hframe1,_("Set Tariff"),NULL,this,ID_SETTARIF,
+#. FRAME_RAISED|FRAME_THICK);
+#: ../src/TarifFrame.cpp:73
+msgid "Add"
+msgstr "Додати"
+
+#: ../src/TarifFrame.cpp:82
+msgid "Tariff Elements"
+msgstr "Елементи тарифу"
+
+#: ../src/TarifFrame.cpp:85
+msgid "Start Time:"
+msgstr "Час початку:"
+
+#: ../src/TarifFrame.cpp:90
+msgid "Hourly Rate:"
+msgstr "Погодинна оплата:"
+
+#: ../src/TarifFrame.cpp:138
+msgid "Minutes"
+msgstr "Хвилини"
+
+#: ../src/TarifFrame.cpp:142
+msgid "Delete Price"
+msgstr "Видалити ціну"
+
+#: ../src/TarifFrame.cpp:144
+msgid "Add Price"
+msgstr "Додати ціну"
+
+#: ../src/TarifFrame.cpp:345
+msgid "No days were selected"
+msgstr "Не вибрано дні"
+
+#: ../src/TarifFrame.cpp:346
+msgid "There isn't any selected day."
+msgstr "Тут не вибрано жодного дня."
+
+#: ../src/TarifFrame.cpp:374 ../src/TarifFrame.cpp:467
+msgid "Conflict"
+msgstr "Конфлікти"
+
+#: ../src/TarifFrame.cpp:375
+msgid ""
+"There is a conflict with another part of the tariff.\n"
+"Conflicting day(s) have been deselected."
+msgstr ""
+"Тут маємо конфлікт з іншою частиною тарифу.\n"
+"Конфліктуючі дні будуть зняті з виділення."
+
+#: ../src/TarifFrame.cpp:434
+msgid "No day was selected"
+msgstr "Немає виділених днів"
+
+#: ../src/TarifFrame.cpp:435
+msgid "Please select a day."
+msgstr "Будь ласка виберіть день"
+
+#: ../src/TarifFrame.cpp:468
+msgid ""
+"There is a conflict with another part of the tariff.\n"
+"I have deselected the conflicting days."
+msgstr ""
+"Тут існує конфлікт з іншою частиною тарифу.\n"
+"Можна зняти виділення конфліктних днів."
+
+#: ../src/TarifFrame.cpp:482
+msgid "Add price"
+msgstr "Додати ціну"
+
+#: ../src/TarifFrame.cpp:574 ../src/TicketsBox.cpp:590
+#: ../src/SettingsBox.cpp:429
+msgid "Tarif"
+msgstr "Тариф"
+
+#: ../src/TarifFrame.cpp:631
+msgid "Use New Tariff"
+msgstr "Використовувати новий тариф"
+
+#: ../src/TarifFrame.cpp:642
+msgid "Tariff Name is invalid."
+msgstr "Неправильна назва тарифу."
+
+#: ../src/TicketsBox.cpp:55
+msgid "Generate and Print Tickets"
+msgstr "Генерувати та друкувати квитки"
+
+#: ../src/TicketsBox.cpp:72
+msgid "Start Date"
+msgstr "Дата початку"
+
+#: ../src/TicketsBox.cpp:77
+msgid "Expiry Date"
+msgstr "Дата кінця"
+
+#: ../src/TicketsBox.cpp:82
+msgid "Ticket Value"
+msgstr "Обсяг послуг квитка"
+
+#: ../src/TicketsBox.cpp:87
+msgid "Number of Digits"
+msgstr "Кількість цифр"
+
+#: ../src/TicketsBox.cpp:92
+msgid "Tariff: "
+msgstr "Тариф:"
+
+#: ../src/TicketsBox.cpp:98
+msgid "Number of Tickets"
+msgstr "Кількість квитків"
+
+#: ../src/TicketsBox.cpp:103
+msgid "Ticket Lifetime"
+msgstr "Термін дії квитка"
+
+#: ../src/TicketsBox.cpp:108
+msgid "Notes: "
+msgstr "Примітки:"
+
+#: ../src/TicketsBox.cpp:115
+msgid "Generated Tickets List"
+msgstr "Список згенерованих квитків"
+
+#: ../src/TicketsBox.cpp:119 ../src/QTicketsBox.cpp:142
+msgid "##"
+msgstr "##"
+
+#: ../src/TicketsBox.cpp:120
+msgid "Ticket Number"
+msgstr "Номер квитка"
+
+#: ../src/TicketsBox.cpp:127
+msgid "Generate"
+msgstr "Генерувати"
+
+#: ../src/TicketsBox.cpp:129 ../src/QTicketsBox.cpp:129
+msgid "Print"
+msgstr "Друкувати"
+
+#: ../src/TicketsBox.cpp:133 ../src/QTicketsBox.cpp:127
+#: ../src/SettingsBox.cpp:196
+msgid "Exit"
+msgstr "Вийти"
+
+#: ../src/TicketsBox.cpp:135 ../src/QTicketsBox.cpp:121
+msgid "Query"
+msgstr "Запит"
+
+#: ../src/TicketsBox.cpp:314 ../src/QTicketsBox.cpp:472
+msgid "Code:  "
+msgstr "Код:"
+
+#: ../src/TicketsBox.cpp:318 ../src/QTicketsBox.cpp:476
+msgid "Value/Units:   "
+msgstr "Обсяг/Кількість:"
+
+#: ../src/TicketsBox.cpp:322 ../src/QTicketsBox.cpp:480
+msgid "Valid From: "
+msgstr "Дійсний з: "
+
+#: ../src/TicketsBox.cpp:328 ../src/QTicketsBox.cpp:482
+msgid " to "
+msgstr " до "
+
+#: ../src/TicketsBox.cpp:335
+msgid "Tariff/Notes: "
+msgstr "Тариф/Примітка:"
+
+#: ../src/TicketsBox.cpp:340
+msgid " ] "
+msgstr " ] "
+
+#: ../src/TicketsBox.cpp:343 ../src/QTicketsBox.cpp:485
+msgid "Printed by "
+msgstr "Надруковано "
+
+#. CCL_free(tName);
+#: ../src/TicketsBox.cpp:348 ../src/QTicketsBox.cpp:488
+msgid " on "
+msgstr " на "
+
+#: ../src/TicketsBox.cpp:413 ../src/TicketsBox.cpp:547
+#: ../src/QTicketsBox.cpp:501
+msgid "Ticket Printing"
+msgstr "Друк квитків"
+
+#: ../src/QTicketsBox.cpp:58
+msgid "Query and Purge Expired Tickets"
+msgstr "Вибрати і видалити прострочені квитки"
+
+#: ../src/QTicketsBox.cpp:77
+msgid "Type of Ticket: "
+msgstr "Тип квитка: "
+
+#: ../src/QTicketsBox.cpp:78
+msgid "All"
+msgstr "Всі"
+
+#: ../src/QTicketsBox.cpp:79
+msgid "Valid"
+msgstr "Дійсний"
+
+#: ../src/QTicketsBox.cpp:80
+msgid "Expired"
+msgstr "Прострочений"
+
+#: ../src/QTicketsBox.cpp:86
+msgid "Face Value: "
+msgstr "Номінальна вартість: "
+
+#: ../src/QTicketsBox.cpp:87 ../src/QTicketsBox.cpp:95
+#: ../src/QTicketsBox.cpp:111
+msgid "Between: "
+msgstr "Між: "
+
+#: ../src/QTicketsBox.cpp:89 ../src/QTicketsBox.cpp:97
+#: ../src/QTicketsBox.cpp:105 ../src/QTicketsBox.cpp:113
+msgid " and "
+msgstr " і   "
+
+#: ../src/QTicketsBox.cpp:94
+msgid "Current Value: "
+msgstr "Поточне значення: "
+
+#: ../src/QTicketsBox.cpp:102
+msgid "Expiry Date: "
+msgstr "Дата прострочки: "
+
+#: ../src/QTicketsBox.cpp:103
+msgid "Between"
+msgstr "між"
+
+#: ../src/QTicketsBox.cpp:110
+msgid "Printing Date: "
+msgstr "Дата друку: "
+
+#: ../src/QTicketsBox.cpp:137
+msgid "Tickets List"
+msgstr "Список квитків"
+
+#: ../src/QTicketsBox.cpp:143
+msgid "Ticket"
+msgstr "Квиток"
+
+#: ../src/QTicketsBox.cpp:144
+msgid "Value"
+msgstr "Обсяг"
+
+#: ../src/QTicketsBox.cpp:145
+msgid "Current"
+msgstr "Поточний"
+
+#: ../src/QTicketsBox.cpp:146
+msgid "Printed"
+msgstr "Надруковано"
+
+#: ../src/QTicketsBox.cpp:147
+msgid "Expiry"
+msgstr "Дата кінця"
+
+#: ../src/QTicketsBox.cpp:500
+msgid "Tickets have been sent to Default Printer"
+msgstr "Квитки було надіслано на типовий принтер"
+
+#: ../src/QTicketsBox.cpp:533
+msgid "Do you really want to delete all these tickets?"
+msgstr "Ви дійсно бажаєте видалити всі ці квитки?"
+
+#: ../src/SettingsBox.cpp:133
+msgid "Mkahawa Cyber Settings"
+msgstr "Налаштування Mkahawa"
+
+#: ../src/SettingsBox.cpp:145
+msgid "Cyber Operation Mode "
+msgstr "Режими роботи Cyber "
+
+#: ../src/SettingsBox.cpp:147
+msgid "Postpaid"
+msgstr "Післяоплата"
+
+#: ../src/SettingsBox.cpp:148
+msgid "Use Tickets"
+msgstr "Використання квитків"
+
+#: ../src/SettingsBox.cpp:149
+msgid "Prepaid Members"
+msgstr "Передоплачені члени"
+
+#. currency
+#: ../src/SettingsBox.cpp:153
+msgid "Currency "
+msgstr "Валюта"
+
+#: ../src/SettingsBox.cpp:156
+msgid "(USD, GBP, EUR, KES)"
+msgstr "(USD, GBP, EUR, KES)"
+
+#. currency
+#: ../src/SettingsBox.cpp:160
+msgid "Client Polling Interval "
+msgstr "Період перевірки клієнта "
+
+#: ../src/SettingsBox.cpp:163
+msgid "Second(s)"
+msgstr "Секунд"
+
+#. Current Value
+#: ../src/SettingsBox.cpp:167
+msgid "Rounding Off "
+msgstr "Округлення вимкнуто "
+
+#: ../src/SettingsBox.cpp:172
+msgid ".00"
+msgstr ".00"
+
+#: ../src/SettingsBox.cpp:173
+msgid ".01"
+msgstr ".01"
+
+#: ../src/SettingsBox.cpp:174
+msgid ".05"
+msgstr ".05"
+
+#: ../src/SettingsBox.cpp:175
+msgid ".10"
+msgstr ".10"
+
+#: ../src/SettingsBox.cpp:176
+msgid ".25"
+msgstr ".25"
+
+#: ../src/SettingsBox.cpp:177
+msgid ".50"
+msgstr ".50"
+
+#. Current Value
+#: ../src/SettingsBox.cpp:181
+msgid "Default Tariff"
+msgstr "Типовий тариф"
+
+#: ../src/SettingsBox.cpp:184
+msgid "[ - ]"
+msgstr "[ - ]"
+
+#. playbutton =
+#. new FXButton(ctoolbar,_("\tStart a Session"),playicon,this,ID_START,
+#. BUTTON_TOOLBAR|FRAME_RAISED|LAYOUT_TOP|LAYOUT_LEFT,
+#. 0,0,0,0,0,0,0,0);
+#: ../src/SettingsBox.cpp:202
+msgid "Apply\tApply Settings to all Clients"
+msgstr "Застосувати Налаштування для всіх клієнтів"
+
+#: ../src/SettingsBox.cpp:474
+msgid "Do you want to save changes?"
+msgstr "Бажаєте зберегти зміни?"

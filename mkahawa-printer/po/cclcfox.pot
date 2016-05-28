@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-10 19:29-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/gui.cpp:256
+msgid "Time:"
+msgstr ""
+
+#: src/gui.cpp:267
+msgid "Owed:"
+msgstr ""
+
+#: src/gui.cpp:278
+msgid "Other:"
+msgstr ""
+
+#: src/gui.cpp:289
+msgid "Set password"
+msgstr ""
+
+#: src/gui.cpp:293
+msgid "End session"
+msgstr ""
+
+#: src/gui.cpp:400
+msgid "Change password"
+msgstr ""
+
+#: src/gui.cpp:401
+msgid "Old password:"
+msgstr ""
+
+#: src/gui.cpp:403
+msgid "New password:"
+msgstr ""
+
+#: src/gui.cpp:405
+msgid "New password (again):"
+msgstr ""
+
+#: src/gui.cpp:408
+msgid "Ok"
+msgstr ""
+
+#: src/gui.cpp:409
+msgid "Cancel"
+msgstr ""
+
+#: src/gui.cpp:422
+msgid "Error"
+msgstr ""
+
+#: src/gui.cpp:423
+msgid "The two given passwords where different"
+msgstr ""
+
+#: src/cclcfox.cpp:272
+msgid "Message"
+msgstr ""
+
+#: src/locker.cpp:217
+msgid "Click here to start"
+msgstr ""
+
+#: src/locker.cpp:455
+msgid "Member ID:"
+msgstr ""
+
+#: src/locker.cpp:455
+msgid "Password:"
+msgstr ""
+
+#: src/main.cpp:35
+#, c-format
+msgid ""
+"Usage: %s -host <server> -name <myname> [options]\n"
+"\n"
+"<server>: the server's hostname or IP\n"
+"<myname>: the name this client is going to be identified with\n"
+"\n"
+"Options:\n"
+"\t-port <port>: Connect to the specified port (default: 2999).\n"
+"\t-nossl: do not use SSL to connect (default: use SSL).\n"
+"\t-certpass <password>: password used for the cerfificate (default: none).\n"
+"\t                      Ignored if not using SSL (-nossl option enabled).\n"
+msgstr ""
+
+#: src/main.cpp:66
+#, c-format
+msgid "[E]Invalid option %s\n"
+msgstr ""
+
+#: src/main.cpp:77
+msgid "[E]File \"cert.pem\" not found!!\n"
+msgstr ""
+
+#: src/main.cpp:79
+msgid "[E]File \"CA.pem\" not found!!\n"
+msgstr ""

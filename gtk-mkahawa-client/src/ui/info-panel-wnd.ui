@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="mainwin">
+    <property name="app_paintable">True</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">200</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <child>
+      <object class="GtkHBox" id="hbox1">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkHBox" id="hbox2">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="lblPriceName">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Price:</property>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEventBox" id="ebxPrice">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkLabel" id="lblPrice">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">--.--</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="padding">3</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox3">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="lblOtherName">
+                <property name="visible">True</property>
+                <property name="xalign">0.43000000715255737</property>
+                <property name="label" translatable="yes">Other:</property>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEventBox" id="ebxOther">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkLabel" id="lblOther">
+                    <property name="visible">True</property>
+                    <property name="xalign">0.4699999988079071</property>
+                    <property name="label" translatable="yes">--.--</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="padding">3</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox4">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="lblTimeName">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Time:</property>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEventBox" id="ebxTime">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkLabel" id="lblTime">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">--:--</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="padding">3</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox5">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkButton" id="btnHelp">
+                <property name="label" translatable="yes">Help</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnExit">
+                <property name="label" translatable="yes">Exit</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkSizeGroup" id="sizegroup1">
+    <widgets>
+      <widget name="mainwin"/>
+    </widgets>
+  </object>
+</interface>

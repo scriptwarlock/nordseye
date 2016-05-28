@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="wndHelp">
+    <property name="width_request">500</property>
+    <property name="height_request">350</property>
+    <property name="tooltip_text" translatable="yes">Click "Help" to close this window</property>
+    <property name="title" translatable="yes">Mkahawa Cyber - Help</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">500</property>
+    <property name="default_height">500</property>
+    <property name="opacity">0.84999999999999998</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <child>
+      <object class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkButton" id="btnHelpCall">
+            <property name="label" translatable="yes">Call Attendant</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Press this button to call Cyber attendant</property>
+            <property name="relief">half</property>
+          </object>
+          <packing>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox2">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkVBox" id="vbox2">
+                <property name="visible">True</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkLabel" id="lblHelpQry">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Type Request or Question below 
+   then press the "Send" button</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkTextView" id="tvHelpQry">
+                    <property name="height_request">100</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="wrap_mode">word</property>
+                    <property name="left_margin">5</property>
+                    <property name="right_margin">5</property>
+                    <property name="buffer">tbHelp</property>
+                  </object>
+                  <packing>
+                    <property name="padding">5</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnHelpSend">
+                <property name="label" translatable="yes">Send</property>
+                <property name="width_request">65</property>
+                <property name="height_request">35</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="tooltip_text" translatable="yes">Send request to Cyber Attendant</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnHelpPasswd">
+            <property name="label" translatable="yes">Change Password</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Change your member password</property>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkTextBuffer" id="tbHelp"/>
+</interface>

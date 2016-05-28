@@ -1,0 +1,201 @@
+AC_INIT(configure.in)
+
+dnl Product Release Number
+MKAHAWA_CLIENT_MAJOR_VERSION=0
+MKAHAWA_CLIENT_MINOR_VERSION=0
+MKAHAWA_CLIENT_PATCH_LEVEL=5
+
+dnl Combined Product Release Number
+VERSION=$MKAHAWA_CLIENT_MAJOR_VERSION.$MKAHAWA_CLIENT_MINOR_VERSION.$MKAHAWA_CLIENT_PATCH_LEVEL
+
+dnl Initialize automake
+AM_INIT_AUTOMAKE(mkahawa_client,$VERSION)
+
+dnl Report what was found
+AC_MSG_CHECKING(major version)
+AC_MSG_RESULT($MKAHAWA_CLIENT_MAJOR_VERSION)
+AC_MSG_CHECKING(minor version)
+AC_MSG_RESULT($MKAHAWA_CLIENT_MINOR_VERSION)
+AC_MSG_CHECKING(patchlevel)
+AC_MSG_RESULT($MKAHAWA_CLIENT_PATCH_LEVEL)
+
+AC_SUBST(MKAHAWA_CLIENT_MAJOR_VERSION)
+AC_SUBST(MKAHAWA_CLIENT_MINOR_VERSION)
+AC_SUBST(MKAHAWA_CLIENT_PATCH_LEVEL)
+
+dnl Checks for programs.
+AC_PROG_MAKE_SET
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_CXX
+AC_PROG_INTLTOOL
+
+AC_LANG_CPLUSPLUS
+
+AC_PATH_X
+AC_PATH_XTRA
+
+AC_MINGW32()
+AC_ARG_WITH(mingw32,[  --with-mingw32[=DIR]    MingW32 installation location])
+
+if test "x$MINGW32" = "xyes" ; then
+  X_CFLAGS=""
+  X_LIBS=""
+  X_INCLUDES=""
+fi
+
+if test "x$MINGW32" = "xyes" ; then
+  AC_DEFINE(WIN32)
+  LIBS="${LIBS} -lcomctl32 -lwsock32 -lwinspool -lmpr"
+  LDFLAGS="${LDFLAGS} -mwindows -e _mainCRTStartup"
+  if test "x$with_mingw32" != "x" ; then
+    CPPFLAGS="${CPPFLAGS} -I$with_mingw32/include"
+    LIBS="${LIBS} -L$with_mingw32/lib"
+  fi
+  X_BASE_LIBS=""
+else
+  X_BASE_LIBS="-lX11"
+  X_INCLUDES="-I/usr/X11R6/include"
+fi
+AC_SUBST(X_BASE_LIBS)
+AC_SUBST(X_INCLUDES)
+AC_EXEEXT
+
+MACOSX_LIBS=""
+
+case "$host_os" in
+  darwin*)
+    AC_DEFINE(MACOSX)
+    MACOSX_LIBS="-L/usr/X11R6/lib -framework Carbon"
+  ;;
+esac
+
+AC_SUBST(MACOSX_LIBS)
+
+AM_GNU_GETTEXT([external])
+
+dnl #######################################################################
+dnl # Check for GLib 2.0 (required)
+dnl #######################################################################
+PKG_CHECK_MODULES(GLIB, [glib-2.0 >= 2.4.0 gobject-2.0 gmodule-2.0 gthread-2.0], , [
+	AC_MSG_RESULT(no)
+	AC_MSG_ERROR([
+
+You must have GLib 2.4.0 or newer development headers installed to build.
+
+If you have these installed already you may need to install pkg-config so
+I can find them.
+])])
+AC_SUBST(GLIB_CFLAGS)
+AC_SUBST(GLIB_LIBS)
+
+GLIB_GENMARSHAL=`pkg-config --variable=glib_genmarshal glib-2.0`
+AC_SUBST(GLIB_GENMARSHAL)
+
+AC_ARG_WITH([extraversion],
+			AC_HELP_STRING([--with-extraversion=STRING],
+						   [extra version number to be displayed in Help->About and --help (for packagers)]),
+						   EXTRA_VERSION=$withval)
+
+if test x"$EXTRA_VERSION" != "x" ; then
+	AC_DEFINE_UNQUOTED(DISPLAY_VERSION, "$VERSION-$EXTRA_VERSION", [display version info])
+else
+	AC_DEFINE_UNQUOTED(DISPLAY_VERSION, "$VERSION", [display version info])
+fi
+
+AC_ARG_ENABLE(missing-dependencies, [AC_HELP_STRING([--disable-missing-dependencies],
+		[skip missing dependencies instead of aborting configure])],
+	force_deps="$enableval", force_deps="yes")
+
+AC_ARG_WITH(x, [],
+	with_x="$withval", with_x="yes")
+AC_ARG_ENABLE(gtkui, [AC_HELP_STRING([--disable-gtkui],
+		[compile without GTK+ user interface])],
+	enable_gtkui="$enableval", enable_gtkui="yes")
+AC_ARG_ENABLE(consoleui, [AC_HELP_STRING([--disable-consoleui],
+		[compile without console user interface])],
+	[enable_consoleui=$enableval force_finch=$enableval], [enable_consoleui=yes force_finch=no])
+
+dnl #######################################################################
+dnl # Check for GTK+ 2.0 and other things used by the GTK UI
+dnl #######################################################################
+AC_ARG_ENABLE(startup-notification,
+	[AC_HELP_STRING([--disable-startup-notification],
+		[compile without startup notification support])],
+	enable_startup_notification="$enableval", enable_startup_notification="yes")
+AC_PATH_XTRA
+# We can't assume that $x_libraries will be set, because autoconf does not
+# set it in the case when the X libraries are in a standard place.
+# Ditto for $x_includes
+if test X"$x_libraries" = X"" || test X"$x_libraries" = XNONE; then
+    x_libpath_add=
+else
+    x_libpath_add="-L$x_libraries"
+fi
+if test X"$x_includes" = X"" || test X"$x_includes" = XNONE; then
+    x_incpath_add=
+else
+    x_incpath_add="-I$x_includes"
+fi
+
+if test "x$enable_gtkui" = "xyes" ; then
+	PKG_CHECK_MODULES(GTK, [gtk+-2.0 >= 2.4.0], , [
+		AC_MSG_RESULT(no)
+		AC_MSG_ERROR([
+
+You require GTK+ 2.4.0 or newer development headers installed to compile
+mkahawa with notify osd. If you are compiling for windows, or don't require
+notifications then specify --disable-gtkui when running configure.
+])])
+
+	AC_SUBST(GTK_CFLAGS)
+	AC_SUBST(GTK_LIBS)
+
+	dnl We only really need Pango >= 1.4 for decent RTL support
+	PKG_CHECK_MODULES(PANGO, [pango >= 1.4.0],
+			AC_DEFINE(HAVE_PANGO14, 1, [Define if we have Pango 1.4 or newer.]),:)
+
+	dnl #######################################################################
+	dnl # Check for startup notification
+	dnl #######################################################################
+	if test "x$enable_startup_notification" = "xyes"; then
+		PKG_CHECK_MODULES(NOTIFICATIONS, [libnotify >= 0.4], , [
+			AC_MSG_RESULT(no)
+			enable_notification="no"
+			if test "x$force_deps" = "xyes" ; then
+				AC_MSG_ERROR([
+notification development headers not found.
+Use --disable-notification if you do not need it.
+])
+			fi])
+
+		if test "x$enable_startup_notification" = "xyes"; then
+			AC_DEFINE(HAVE_NOTIFICATION, 1, [Define if we're using libnotify.])
+  			LIBS="${LIBS} ${NOTIFICATIONS_LIBS}"
+    			CPPFLAGS="${CPPFLAGS} ${NOTIFICATIONS_CFLAGS}"
+		fi
+	fi
+
+fi	# GTK
+
+AM_CONDITIONAL(ENABLE_GTK, test "x$enable_gtkui" = "xyes")
+
+dnl Checks for header files.
+AC_CHECK_LIB(FOX-1.6,fxfindfox,,AC_MSG_ERROR([please install fox 1.6]))
+if test "x$FOX-1.6" = "xyes" ; then
+  LIBS="${LIBS} -lfox1.6"
+fi
+AC_CHECK_HEADER(fox-1.6/fx.h,,AC_MSG_ERROR([please install fox 1.6 headers]))
+#AC_CHECK_HEADER(cclc.h,,AC_MSG_ERROR([please install libcclc headers]))
+AC_CHECK_LIB(ssl, SSL_new,,AC_MSG_ERROR([please install openssl]))
+AC_CHECK_HEADER(openssl/ssl.h,,AC_MSG_ERROR([please install openssl headers]))
+
+
+
+dnl Done.
+AC_OUTPUT([ po/Makefile.in m4/Makefile
+Makefile
+src/Makefile 
+])
+
+
