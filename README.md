@@ -2,7 +2,7 @@ Nordseye is a fork of Mkahawa an open-source project that builds on Cafe Con Lec
 
 Nordseye extends CCL's traditional cross-platform nature, simplicity, lightness and speed with the following major additional features:
 
-Staff Access Management (Login & Logout)
+Staff Access Management (Login & Logout) <br>
 Choice of post-paid and prepaid billing
 Stronger membership management
 Tickets printing and management
