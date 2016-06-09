@@ -45,4 +45,4 @@ Options:
 	-port <port>: connect to the specified port (default: 2999)
 	-nossl :do not use SSL to connect (default: use SSL)
 	-certpass <password>: password used for the certificate (default: none)
-			      ignored if not using SSL (-nossl option is enabled)
+			      ignored if not using SSL (-nossl option is enabled).
