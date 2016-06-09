@@ -1,17 +1,26 @@
-mkahawa-srv compile
-	./configure LIBS="-lpthread -lm -ldl"
-	make
-	sudo make install
+Nordseye
 
+pre requisite : build-essentials
 
-
-mkahawa-client compile
-	dependencies:
-		libgtk-2.0-dev
-		libnotify-dev
+server:
+	libsqlite3-dev
+	libglib2.0-dev
+	libssl-dev
+	intltool
+	libfox-1.6-dev
 	
-config.status: error: po/Makefile.in.in was not created by intltoolize
-	intltoolize --force
-	aclocal
+client:
+	libsqlite3.dev
+	libssl-dev
+	intltool
+	libnotify-dev
+	libgtk2.0-dev
+	libfox-1.6-dev
 
-	./configure LIBS="-lpthread -lm -lssl -lcrypto -lX11 -ldl"
+error workaround (64bit)
+	server - ./configure LIBS="-lpthread -lm -ldl"
+	client - ./configure LIBS="-lpthread -lm -lssl -lcrypto -lX11 -ldl"
+
+config.status: error: po/Makefile.in.in was not created by intltoolize 
+		intltoolize --force
+		aclocal
