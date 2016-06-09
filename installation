@@ -40,7 +40,7 @@ Options:
 			       Ignored if not using SSL (-nossl option enabled)
 
 	Client
-		mkahawa-client -host <server> -name <anyname> [options]
+		mkahawa-client -host <server> -name <anyname> [options].
 Options:
 	-port <port>: connect to the specified port (default: 2999)
 	-nossl :do not use SSL to connect (default: use SSL)
