@@ -11,7 +11,6 @@ Installers for Ubuntu, Zencafe(Zenwalk) <br>
 Automatic charging for print-outs <br>
 Multi-language capability <br>
 Client updates from the server <br>
-Many more additional features - see full feature list <br>
 
 Nordseye speed and small memory foot-print comes from the fact that it is built in C and C++.
 
