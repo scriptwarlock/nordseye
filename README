@@ -24,3 +24,25 @@ error workaround (64bit)
 config.status: error: po/Makefile.in.in was not created by intltoolize 
 		intltoolize --force
 		aclocal
+
+use cert.sh to generate keys
+chmod +x cert.sh
+and run it on the terminal with "bash cert.sh" (big thanks to MANCHA https://github.com/mancha1 in helping it to run w/o errors)
+and put the generated keys booth CA.pem & cert.pem to .mkahawa folder, server and client.
+
+Usage:
+	Server
+		mkahawa [options]
+Options:
+	-port <port>: Listen on the specified port (default: 2999)
+	-nossl: do not use SSL to connect (default: use SSL)
+	-certpass <password>: password used for the cerfificate (default: none)
+			       Ignored if not using SSL (-nossl option enabled)
+
+	Client
+		mkahawa-client -host <server> -name <anyname> [options]
+Options:
+	-port <port>: connect to the specified port (default: 2999)
+	-nossl :do not use SSL to connect (default: use SSL)
+	-certpass <password>: password used for the certificate (default: none)
+			      ignored if not using SSL (-nossl option is enabled)
