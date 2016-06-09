@@ -15,4 +15,3 @@ Many more additional features - see full feature list <br>
 
 Nordseye speed and small memory foot-print comes from the fact that it is built in C and C++.
 
-Built for Linux, Windows and MacOS, you can find the free source and some binaries at sourceforge.net .
