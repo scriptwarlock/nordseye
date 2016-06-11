@@ -3,7 +3,12 @@ Nordseye
 pre requisite : build-essentials
 
 server: compile libccls & mkahawa-srv
+ 
+  with	./configure
+	make
+	make install(root)
 
+needs:
 	libsqlite3-dev
 	libglib2.0-dev
 	libssl-dev
@@ -11,7 +16,12 @@ server: compile libccls & mkahawa-srv
 	libfox-1.6-dev
 	
 client: compile libcclc & mkahawa-client
-
+ 
+  with  ./configure
+  	make
+  	make install(root)
+  
+needs:	
 	libsqlite3.dev
 	libssl-dev
 	intltool
