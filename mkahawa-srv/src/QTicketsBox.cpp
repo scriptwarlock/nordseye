@@ -428,7 +428,7 @@ getLiveCredit(int member, int dbcredit)
   FXuint client, owed, owed_val;
 
   for (int i=0; client = CCL_client_get_nth(i); i++){
-	  if (member == CCL_client_member_get(client)){
+	  if (member = CCL_client_member_get(client)){
 		owed = CCL_client_owed_terminal(client);
 		owed_val = dbcredit - owed;
 		return owed_val;
