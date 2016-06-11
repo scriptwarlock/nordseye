@@ -1,6 +1,6 @@
 Nordseye
 
-pre requisite : build-essential
+prerequisite : build-essential
 
 server: compile libccls & mkahawa-srv
  
