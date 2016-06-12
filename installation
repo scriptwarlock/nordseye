@@ -58,3 +58,11 @@ Options:
 	-nossl :do not use SSL to connect (default: use SSL)
 	-certpass <password>: password used for the certificate (default: none)
 			      ignored if not using SSL (-nossl option is enabled).
+
+change lockscreen:
+
+	prepare your own image/picture in gif format and save as lockpix.gif
+	put it inside .mkahawa folder and restart the client machine.
+	
+	a sample conversion command:
+		$for file in *.png; do convert "$file" "$(basename $file .png).gif"; done
