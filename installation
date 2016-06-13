@@ -59,7 +59,7 @@ Options:
 	-certpass <password>: password used for the certificate (default: none)
 			      ignored if not using SSL (-nossl option is enabled).
 
-change lockscreen:
+change client lockscreen:
 
 	prepare your own image/picture in gif format and save as lockpix.gif
 	put it inside .mkahawa folder and restart the client machine.
