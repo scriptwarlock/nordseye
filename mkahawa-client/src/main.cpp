@@ -116,7 +116,7 @@ main(int argc,char *argv[])
     return 1;
   }
 
-  FXApp app("nordseye","nordseye Cyber Manager");
+  FXApp app("nordseye","Nordseye Cyber Manager");
   if (!homedir)
 #ifndef WIN32
     FXSystem::setCurrentDirectory(FXSystem::getHomeDirectory() + "/.mkahawa/");
