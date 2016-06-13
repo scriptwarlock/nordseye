@@ -398,7 +398,7 @@ void
 CCLCFox::showMessage(void * message)
 {
   FXMessageBox::information(clientwin->getRoot(),
-  			MBOX_OK,_("Message From the Admin"), (char *)message);
+  			MBOX_OK,_("Message From Manager"), (char *)message);
 }
 
 #ifdef WIN32
