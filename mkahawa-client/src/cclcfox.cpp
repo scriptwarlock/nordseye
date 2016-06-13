@@ -328,7 +328,7 @@ void
 CCLCFox::shutdownSystem()
 {
 #ifndef WIN32
-  system("/sbin/halt");
+  system("/sbin/halt -p");
 #else
   HANDLE hToken;
   TOKEN_PRIVILEGES tkp;
