@@ -552,7 +552,7 @@ FXbool
 CCLWin::close(FXbool notify)
 {
   if (FXMessageBox::question(this,MBOX_YES_NO,_("Exit Mkahawa"),
-			     _("Do you really want to quit Mkahawa?")) == MBOX_CLICKED_YES)
+			     _("Do you really want to quit Nordseye?")) == MBOX_CLICKED_YES)
 {
     FXMainWindow::close(TRUE);
     return TRUE;
