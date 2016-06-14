@@ -90,7 +90,7 @@ int          print_job[MAX_CLIENTS];
 int          job_pages[MAX_CLIENTS];
 int          warn_lvl[MAX_CLIENTS];
 FXuint       prev_price[MAX_CLIENTS];
-char         *cybername = (char *)"Mkahawa Cyber Manager";
+char         *cybername = (char *)"Nordseye Cyber Manager";
 
 FXDEFMAP(CCLWin) CCLWinMap[] = {
 	FXMAPFUNC(SEL_TIMEOUT,CCLWin::ID_CHECKEVENTS,CCLWin::onCheckEvents),
